@@ -1,0 +1,20 @@
+[
+    { "keys": ["ctrl+alt+super+down"], "command": "goto_definition" },
+    { "keys": ["ctrl+alt+super+left"], "command": "jump_back" },
+    { "keys": ["ctrl+alt+super+right"], "command": "jump_forward" },
+
+    // Select text between brackets
+    {
+        "keys": ["super+shift+b", "super+shift+s"],
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect"
+            }
+        }
+    },
+]
