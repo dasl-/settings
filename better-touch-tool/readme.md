@@ -1,0 +1,1 @@
+Not sure what the .settings file is. The json file can be imported / exported, so maybe just use that, since it's newer.
