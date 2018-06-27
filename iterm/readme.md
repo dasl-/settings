@@ -1,0 +1,1 @@
+export settings via: https://stackoverflow.com/questions/22943676/how-to-export-iterm2-profiles
