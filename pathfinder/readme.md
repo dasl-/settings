@@ -1,0 +1,1 @@
+preferences are in these files: http://support.cocoatech.com/discussions/problems/43609-trying-to-export-preferences-to-other-macs
