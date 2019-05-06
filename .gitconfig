@@ -1,0 +1,8 @@
+[user]
+    name = dleibovic
+    email = dleibovic@etsy.com
+[color]
+    ui = true
+[core]
+    editor = subl -n -w
+pager = /usr/local/Cellar/git/2.20.1/share/git-core/contrib/diff-highlight/diff-highlight | less -r
