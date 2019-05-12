@@ -89,6 +89,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# cd with fzf
+source ~/.config/zsh/zsh-interactive-cd.plugin.zsh
+
 # To activate the syntax highlighting, add the following at the end of your .zshrc (must be last):
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
