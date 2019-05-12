@@ -5,4 +5,4 @@
     ui = true
 [core]
     editor = subl -w
-pager = /usr/local/Cellar/git/2.20.1/share/git-core/contrib/diff-highlight/diff-highlight | less -r
+    pager = /usr/local/Cellar/git/2.20.1/share/git-core/contrib/diff-highlight/diff-highlight | less
