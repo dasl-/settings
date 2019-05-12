@@ -92,6 +92,26 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # cd with fzf
 source ~/.config/zsh/zsh-interactive-cd.plugin.zsh
 
+#############################################
+# START: only add absolute paths to history #
+#############################################
+
+# skip adding "cd" commands to history
+function zshaddhistory() {
+    if [[ $1 = cd\ * ]]; then
+        return 1
+    fi
+}
+
+# add a "cd <absolute path>"" to history whenever the working directory changes
+function chpwd() {
+    print -s "cd ${PWD:a}"
+}
+
+#############################################
+# END: only add absolute paths to history   #
+#############################################
+
 # To activate the syntax highlighting, add the following at the end of your .zshrc (must be last):
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
