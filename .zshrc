@@ -103,7 +103,7 @@ function zshaddhistory() {
     fi
 }
 
-# add a "cd <absolute path>"" to history whenever the working directory changes
+# add a "cd <absolute path>" to history whenever the working directory changes
 function chpwd() {
     print -s "cd ${PWD:a}"
 }
