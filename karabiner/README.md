@@ -1,6 +1,5 @@
 Karabiner, formerly known as keyremap4macbook.
 
-Run the import script on a new machine. It was generated via:
-```
-/Applications/Karabiner.app/Contents/Library/bin/karabiner export > karabiner-import.sh
-```
+key repeat can be done in [system preferences > keyboard](https://dl.dropboxusercontent.com/s%2Fl55y31snrnlzu1s%2F2019-05-11_20-15-45.png)
+
+put karabiner.json into ~/.config/karabiner/karabiner.json
