@@ -105,7 +105,8 @@ function zshaddhistory() {
 
 # add a "cd <absolute path>" to history whenever the working directory changes
 function chpwd() {
-    print -s "cd ${PWD:a}"
+    escaped_dir=$(printf %q "$(pwd)") # escape spaces in directory names
+    print -rs "cd $escaped_dir"
 }
 
 #############################################
