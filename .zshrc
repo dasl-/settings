@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dleibovic/.oh-my-zsh"
+export ZSH="/Users/davidleibovic/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -78,6 +78,21 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+[[ -s "/Users/davidleibovic/.rvm/scripts/rvm" ]] && source "/Users/davidleibovic/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# javascript runtime for executing processing.js unit tests
+export JSSHELL=/usr/local/bin/js
+
+# use homebrew php 7.1 on command line
+export PATH="$(brew --prefix php@7.1)/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin:/Users/davidleibovic/bin # Add RVM to PATH for scripting
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH
+
 autoload -U colors && colors
 PROMPT="%{$fg[green]%}%B[laptop] %~ %% %b%{$reset_color%}"
 
@@ -87,10 +102,11 @@ alias git_undo_last_commit="git reset --soft 'HEAD^'"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#
+[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
 
-# cd with fzf
-source ~/.config/zsh/zsh-interactive-cd.plugin.zsh
+# change native zsh autocomplete to always use fzf
+source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
 
 ##################################################
 # START: only add absolute "cd" paths to history #
