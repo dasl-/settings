@@ -4,5 +4,7 @@
 [color]
     ui = true
 [core]
+    pager = delta --24-bit-color always --highlight-removed --theme 'Monokai (SL)'
     editor = subl -w
-    pager = /usr/local/Cellar/git/2.20.1/share/git-core/contrib/diff-highlight/diff-highlight | less
+[interactive]
+    diffFilter = delta --24-bit-color always --highlight-removed --theme 'Monokai (SL)' --color-only
