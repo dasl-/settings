@@ -83,9 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # javascript runtime for executing processing.js unit tests
 export JSSHELL=/usr/local/bin/js
 
-# use homebrew php 7.1 on command line
-export PATH="$(brew --prefix php@7.1)/bin:$PATH"
-
 PATH=$PATH:$HOME/.rvm/bin:/Users/davidleibovic/bin # Add RVM to PATH for scripting
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
@@ -102,14 +99,15 @@ alias git_undo_last_commit="git reset --soft 'HEAD^'"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # fzf
+#
 [ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
 
 # change native zsh autocomplete to always use fzf
 source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
 
-##################################################
-# START: only add absolute "cd" paths to history #
-##################################################
+#############################################
+# START: only add absolute paths to history #
+#############################################
 
 # skip adding "cd" commands to history
 function zshaddhistory() {
@@ -124,9 +122,9 @@ function chpwd() {
     print -rs "cd $escaped_dir"
 }
 
-##################################################
-# END: only add absolute "cd" paths to history   #
-##################################################
+#############################################
+# END: only add absolute paths to history   #
+#############################################
 
 # To activate the syntax highlighting, add the following at the end of your .zshrc (must be last):
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
