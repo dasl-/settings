@@ -99,15 +99,14 @@ alias git_undo_last_commit="git reset --soft 'HEAD^'"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # fzf
-#
 [ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
 
 # change native zsh autocomplete to always use fzf
 source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
 
-#############################################
-# START: only add absolute paths to history #
-#############################################
+##################################################
+# START: only add absolute "cd" paths to history #
+##################################################
 
 # skip adding "cd" commands to history
 function zshaddhistory() {
@@ -122,9 +121,9 @@ function chpwd() {
     print -rs "cd $escaped_dir"
 }
 
-#############################################
-# END: only add absolute paths to history   #
-#############################################
+##################################################
+# END: only add absolute "cd" paths to history   #
+##################################################
 
 # To activate the syntax highlighting, add the following at the end of your .zshrc (must be last):
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
