@@ -1,7 +1,7 @@
 # settings
 ## .zshrc
-This file depends on:
-* oh-my-zsh
+Depends on:
+* oh-my-zsh https://ohmyz.sh/#install
 * other stuff too?
 ```
 brew install zsh
