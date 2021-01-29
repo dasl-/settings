@@ -99,7 +99,7 @@ alias git_undo_last_commit="git reset --soft 'HEAD^'"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # fzf
-[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # change native zsh autocomplete to always use fzf
 source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
