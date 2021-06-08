@@ -1,0 +1,14 @@
+// SublimeLinter Settings - User
+{
+    "debug": true,
+    "paths": {
+        "linux": [],
+        "osx": ["/usr/local/opt/php71/bin"],
+        "windows": []
+    },
+    "linters": {
+        "flake8": {
+            "args": ["--ignore=E501,W503,W504,E127,E128,E302,E251,E261,E262"],
+        }
+    }
+}
