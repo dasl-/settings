@@ -1,0 +1,36 @@
+# installed packages
+via: https://stackoverflow.com/a/44353619/627663 
+```
+	"installed_packages":
+	[
+		"ApacheConf",
+		"Babel",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Clickable URLs",
+		"DocBlockr",
+		"FileDiffs",
+		"Hound Search",
+		"HTML Mustache",
+		"JsFormat",
+		"jsonnet syntax",
+		"LSP",
+		"LSP-intelephense",
+		"Package Control",
+		"PackageResourceViewer",
+		"phpfmt",
+		"Pretty JSON",
+		"rsub",
+		"SFTP",
+		"sublime-github",
+		"SublimeCrontab",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-jshint",
+		"SublimeLinter-php",
+		"SublimeLinter-ruby",
+		"SublimeLinter-shellcheck",
+		"Terraform",
+		"Xdebug Client",
+	],
+  ```
