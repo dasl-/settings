@@ -3,6 +3,8 @@
     { "keys": ["ctrl+alt+super+left"], "command": "jump_back" },
     { "keys": ["ctrl+alt+super+right"], "command": "jump_forward" },
 
+    { "keys": ["super+k", "super+s"], "command": "set_mark" },
+
     // Select text between brackets
     {
         "keys": ["super+shift+b", "super+shift+s"],
