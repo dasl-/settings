@@ -13,4 +13,5 @@ brew install zsh-syntax-highlighting
 Depends on:
 ```
 brew install git-delta
+brew install bat
 ```
