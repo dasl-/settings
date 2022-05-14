@@ -5,16 +5,17 @@
     ui = true
 [core]
     editor = subl -w
-	pager = delta --true-color always --syntax-theme \"Monokai (SL)\"
+    pager = delta --true-color always --syntax-theme \"Monokai (SL)\"
 [interactive]
-	diffFilter = delta --true-color always --syntax-theme \"Monokai (SL)\" --color-only
+    diffFilter = delta --true-color always --syntax-theme \"Monokai (SL)\" --color-only
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [delta]
-	navigate = true
-	light = false
-	word-diff-regex = . # https://github.com/dandavison/delta/issues/184
+    navigate = true
+    light = false
+    word-diff-regex = . # My customization. https://github.com/dandavison/delta/issues/184
+    minus-style = syntax auto # My customization
 [merge]
-	conflictstyle = diff3
+    conflictstyle = diff3
 [diff]
-	colorMoved = default
+    colorMoved = default
