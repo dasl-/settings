@@ -88,6 +88,7 @@ PATH=/opt/homebrew/opt/ruby/bin:$PATH:$HOME/.rvm/bin:/Users/davidleibovic/bin # 
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH
 
 autoload -U colors && colors
