@@ -76,14 +76,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-[[ -s "/Users/davidleibovic/.rvm/scripts/rvm" ]] && source "/Users/davidleibovic/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # javascript runtime for executing processing.js unit tests
 export JSSHELL=/usr/local/bin/js
 
-PATH=/opt/homebrew/opt/ruby/bin:$PATH:$HOME/.rvm/bin:/Users/davidleibovic/bin # Add RVM to PATH for scripting
+PATH=/opt/homebrew/opt/ruby/bin:$PATH:/Users/davidleibovic/bin
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
@@ -125,6 +121,12 @@ function chpwd() {
 ##################################################
 # END: only add absolute "cd" paths to history   #
 ##################################################
+
+# Jekyll only supports Ruby version 3.1.3, which is an older version of Ruby
+# See: https://jekyllrb.com/docs/installation/macos/
+source "$(brew --prefix)"/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.3 # run 'chruby' to see actual version
 
 # To activate the syntax highlighting, add the following at the end of your .zshrc (must be last):
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
