@@ -85,7 +85,9 @@ PATH=/opt/homebrew/opt/ruby/bin:$PATH:/Users/davidleibovic/bin
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH
+
 
 autoload -U colors && colors
 PROMPT="%{$fg[green]%}%B[laptop] %~ %% %b%{$reset_color%}"
