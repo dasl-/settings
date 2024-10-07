@@ -10,3 +10,17 @@
   * Gestures > Mission control: off
   * Gestures > Launchpad: disable
   * Gestures > Show desktop: disable
+* Finder
+  * Show hidden files / folders: `Command + Shift + .`
+  * Settings > Sidebar > Show homedir in sidebar
+  * Settings > Advanced > Show all filename extensions
+  * Settings > Advanced > When performing a search: Search the current folder
+  * View > Show sidebar
+  * View > Show path bar
+  * View > Show status bar
+  * View > Show view options > enable:
+    * Always open in list view
+    * Browse in list view
+    * Show columns: Date modified, Date created, Date added, Size, Kind
+    * Use as defaults
+ 
