@@ -23,4 +23,6 @@
     * Browse in list view
     * Show columns: Date modified, Date created, Date added, Size, Kind
     * Use as defaults
- 
+* Desktop & dock
+  * Automatically hide and show dock: enable
+  * Hot corners > Top left: Start screen saver; Bottom left: Disable screen saver
