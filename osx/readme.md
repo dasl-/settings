@@ -11,8 +11,10 @@
   * Gestures > Launchpad: disable
   * Gestures > Show desktop: disable
 * Finder
-  * Show hidden files / folders: `Command + Shift + .`
+  * Show hidden files / folders: `Command + Shift + .` Permanently enable: https://apple.stackexchange.com/a/302976
+  * Settings > Sidebar > Don't show Recents in sidebar
   * Settings > Sidebar > Show homedir in sidebar
+  * Settings > General > New finder windows show: homedir
   * Settings > Advanced > Show all filename extensions
   * Settings > Advanced > When performing a search: Search the current folder
   * View > Show sidebar
