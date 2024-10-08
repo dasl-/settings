@@ -28,3 +28,6 @@
 * Desktop & dock
   * Automatically hide and show dock: enable
   * Hot corners > Top left: Start screen saver; Bottom left: Disable screen saver
+* Battery > Options > Prevent automatic sleeping on power adapter when the display is off: Enabled
+* Lock screen > Turn display off on battery when inactive for: 5 minutes
+* Lock screen > Turn display off on power adapter when inactive for: 10 minutes
