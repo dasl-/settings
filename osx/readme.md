@@ -31,3 +31,5 @@
 * Battery > Options > Prevent automatic sleeping on power adapter when the display is off: Enabled
 * Lock screen > Turn display off on battery when inactive for: 5 minutes
 * Lock screen > Turn display off on power adapter when inactive for: 10 minutes
+* Always show Sound icon in Menu Bar: System Preferences > Control Center > Set the Sound option to "Always Show in Menu Bar"
+* <img src="sound_menu_bar.png" width="600"/>
